@@ -1,0 +1,170 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title> Mover By Omnia</title>
+        <link rel="icon" href="img/logo.png">
+
+
+    </header>
+    <body class=" pos">
+      <!--SideBar-->
+
+      <section>
+        <div class="demo position-fixed top-0  d-flex justify-content-between flex-column align-items-center " id="sBar">
+          <img src="img/logo.png" class="logo mt-3">
+          <i class="fa fa-align-justify text-dark " id="sBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
+    
+          <div class="strip-social-icon text-dark  d-flex justify-content-between flex-column align-items-center ">
+            <i class="fas fa-share-alt my-1"></i>
+            <i class="fas fa-globe my-1"></i>
+    
+          </div>
+    
+    
+    
+    
+    
+    
+         </div>
+    
+    
+    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+            <div class="offcanvas-body  bg-dark">
+              <div class="nav-tab-menu open-menu  d-flex justify-content-between flex-column align-items-center h-100">
+                <div class="nav-item">
+                  <ul>
+                    <li class="item1" style="opacity: 1; padding-top: 25px;"><a class="nav-category " href="#">Now playing</a></li>
+                    <li class="item2" style="opacity: 1; padding-top: 25px;"><a class="nav-category" href="#">Popular</a></li>
+                    <li class="item3" style="opacity: 1; padding-top: 25px;"><a class="nav-category" href="#">Top Rated</a></li>
+                
+                    <li class="item5" style="opacity: 1; padding-top: 25px;"><a class="nav-category " href="#">Trending</a></li>
+                    <li class="item6" style="opacity: 1; padding-top: 25px;"><a class="nav-category" href="#">Upcoming</a></li>
+                    <li class="item6" style="opacity: 1; padding-top: 25px;"><a class="nav-category" href="#contact">Contact Us</a></li>
+              
+                
+                  </ul>
+                </div>
+                <div class="nav-social-item text-center text-white">
+                  <a href="#"><i class="fab fa-facebook-f mx-1"></i></a>
+                  <a href="#"><i class="fab fa-twitter mx-1"></i></a>
+                  <a href="#"><i class="fas fa-globe mx-1"></i></a>
+                  <div class="pt-3 text-light">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+
+      <!--Search-->
+  <section class=" container my-5 py-4">
+    <div class="row">
+      <div class="col-md-6">
+        <input id="allMovies" class="form-control mb-5 " placeholder="get movies by word...">
+
+      </div>
+      <div class="col-md-6">
+        <input class="form-control mb-5 " id="word" placeholder="search...">
+      </div>
+    </div>
+  </section>
+  <!--Display Movies-->
+  <section class=" container py-5 my-5">
+    <div class="row  w-90  m-auto" id="display">
+
+
+    </div>
+
+  </section>
+  <!--Form-->
+  <section id="contact" class="container myM w-75 mx-auto my-5 ">  
+    <h2 class="text-light my-5">ContacUs...</h2>
+    <div class="row">
+      <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" id="name" placeholder="Enter Your Name">
+      <div class="alert alert-danger d-none" id="namealert" role="alert">
+        Your Name is not valid
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" id="email" placeholder="Enter Email">
+      <div class="alert alert-danger d-none" id="emailalert" role="alert">
+      entre valid email
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" id="phone" placeholder="Enter phone">
+      <div class="alert alert-danger d-none" id="phonealert" role="alert">
+      entre valid phone
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" id="age" placeholder="Enter Age">
+      <div class="alert alert-danger d-none" id="agealert" role="alert" style="display: none;">
+      entre valid Age
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" type="password" id="password" placeholder="Enter Password">
+      <div class="alert alert-danger d-none" id="passwordalert" role="alert">
+      entre valid password *Minimum eight characters, at least one letter and one number:*
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6 my-2">
+    <div class="form-group">
+      <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+      <div class="alert alert-danger d-none" id="repasswordalert" role="alert">
+      entre valid Repassword
+      </div>
+    </div>
+    </div>
+  
+  
+    </div>  
+
+    
+    <button type="submit"  id="subBtn" class="btn btn-outline-danger mt-2">Submit</button>
+    <div class="alert alert-success d-none" id="subDone" role="alert">
+      Submit Done
+      </div>
+    <div class="alert alert-danger d-none" id="subrong" role="alert">
+      Sonme this is rong 
+      </div>
+
+  
+    </section>
+        
+       
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/myjs.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
